@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stlye.css">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+
+    <center>
+        <header>
+            <h1>Apague ou acenda a Luz</h1>
+            <button id="Botao" onclick="Botao()">Ligar</button>
+        </header>
+    </center>
+
+    <center>
+    <section>
+        <img id="lampada" src="img/soP (2) (1).png" alt="Lampada">
+        <script>
+            document.body.style.backgroundColor = "black";
+
+            let isLampOn = false;
+            let clickCount = 0;
+
+            function Botao() {
+                const lampada = document.getElementById("lampada");
+                const button = document.getElementById("Botao");
+                const counter = document.getElementById("counter");
+
+
+                if (isLampOn) {
+                    lampada.src = "img/soP (2) (1).png";
+                    button.textContent = "Ligar";
+                } else {
+                    lampada.src = "img/so (1).jpg";
+                    button.textContent = "Desligar";
+                }
+
+                isLampOn = !isLampOn;
+                clickCount++;
+                counter.textContent = `Botão apertado: ${clickCount} vezes`;
+            }
+        </script>
+    </section>
+</body>
+</center>
+
+<section>
+    <div id="counter" style="text-align: center; color: white; margin-top: 20px;">Botão apertado: 0 vezes</div>
+</section>
+
+</html>

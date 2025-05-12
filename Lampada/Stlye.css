@@ -1,0 +1,33 @@
+body{
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header{
+    padding: 10px 0;
+    text-align: center;
+}
+header h1{
+    color: #fcfcfc;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 600px; 
+    height: 600px; 
+    object-fit: cover; 
+}
+
+button {
+    display: block;
+    margin: 10px auto; 
+    position: relative;
+    justify-content: center;
+    align-items: top;
+    top: 0; 
+}
